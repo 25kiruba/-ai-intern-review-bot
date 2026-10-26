@@ -1,0 +1,115 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Check Git status before push",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"status",
+				"--short",
+				"--branch"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Initialize project Git repository",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"init",
+				"-b",
+				"main"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Stage project files safely",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"add",
+				"-A"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Review staged files",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"status",
+				"--short"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Commit project files",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"commit",
+				"-m",
+				"Initial commit"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Commit project for GitHub",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"-c",
+				"user.name=25kiruba",
+				"-c",
+				"user.email=25kiruba@users.noreply.github.com",
+				"commit",
+				"-m",
+				"Initial commit",
+				"-m",
+				"Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Add GitHub remote origin",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"remote",
+				"add",
+				"origin",
+				"https://github.com/25kiruba/-ai-intern-review-bot.git"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Push main to GitHub",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"-C",
+				"C:\\Users\\Admin\\Downloads\\ai-intern-review-bot\\ai-intern-review-bot",
+				"push",
+				"-u",
+				"origin",
+				"main"
+			],
+			"problemMatcher": []
+		}
+	]
+}
